@@ -21,7 +21,7 @@ edit config/app.php
     php artisan vendor:publish --provider="VIrtualorz\ActionLog\ActionLogServiceProvider"
    
 # Run Migration
-    php artisan migraate
+    php artisan migrate
     
 # Method
 
