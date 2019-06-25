@@ -16,12 +16,9 @@ edit config/app.php
         ...
         'Sitemap' => Virtualorz\ActionLog\Facades\ActionLog::class,
     ]
-    
-# Publish data
-    php artisan vendor:publish --provider="VIrtualorz\ActionLog\ActionLogServiceProvider"
    
 # Run Migration
-    php artisan migrate
+    php artisan migrate --path=/vendor/virtualorz/actionlog/src/migrations
     
 # Method
 
