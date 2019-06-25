@@ -35,6 +35,12 @@ edit config/app.php
 `$page as page name ,$action as action type ,$remark as remark text,$object = null as model object ,$target_id = null as modify target id`
 `save the model object before after value to database`
 
+###### logList($page=15)
+`return the log list result paginate by $page`
+
+###### logContent($id)
+`return the content of log id=$id`
+
 # Example for manual add value
     ActionLog::pushBefore('system_permission', system_permission::where('member_id', $request->get('id'))->get());
     ...
