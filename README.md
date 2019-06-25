@@ -14,7 +14,7 @@ edit config/app.php
     
     'aliases' => [
         ...
-        'Sitemap' => Virtualorz\ActionLog\Facades\ActionLog::class,
+        'ActionLog' => Virtualorz\ActionLog\Facades\ActionLog::class,
     ]
    
 # Run Migration
