@@ -17,8 +17,15 @@ edit config/app.php
         'ActionLog' => Virtualorz\ActionLog\Facades\ActionLog::class,
     ]
    
+# Publish data
+    php artisan vendor:publish --provider="Virtualorz\ActionLog\ActionLogServiceProvider"
+    
 # Run Migration
     php artisan migrate --path=/vendor/virtualorz/actionlog/src/migrations
+    
+# Edit Config
+edit config/actionLog_logAction , <br />
+for three type to the name you want
     
 # Method
 

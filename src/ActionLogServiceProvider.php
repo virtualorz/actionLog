@@ -28,5 +28,6 @@ class ActionLogServiceProvider extends ServiceProvider
     {
         //
         $this->loadMigrationsFrom(__DIR__.'/migrations');
+        $this->loadViewsFrom(__DIR__.'/view', 'actionLog');
     }
 }

@@ -112,7 +112,12 @@ class ActionLog
             $log->after = $tmp_3;
         }
 
-        return $log;
+        $content_html = view('actionLog::logContent',[
+            'log' => $log,
+            'log_action' => Config('actionLog_logAction.log_action')
+        ])->render();
+
+        return $content_html;
     }
 
 }
