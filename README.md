@@ -43,7 +43,7 @@ for three type to the name you want
 `return the log list result paginate by $page`
 
 ###### logContent($id)
-`return the content of log id=$id`
+`return the content HTML of log id=$id , you can use {!! $RESULT_HTML !!} in blade to show the log content`
 
 # Example for manual add value
     ActionLog::pushBefore('system_permission', system_permission::where('member_id', $request->get('id'))->get());
