@@ -29,21 +29,28 @@ for three type to the name you want
     
 # Method
 
-###### pushBefore
-`add before value to object manual`
+###### pushBefore($key, $value)
+    add before value to object manual, $key for table name, $value for row value
 
-###### pushAfter
-`add after value to object manual`
+###### pushAfter($key, $value)
+    add after value to object manual, $key for table name, $value for row value
 
-###### save
-`$page as page name ,$action as action type ,$remark as remark text,$object = null as model object ,$target_id = null as modify target id`
-`save the model object before after value to database`
+###### save($page,$action,$remark,$object = null,$target_id = null)
+    save before after value to database,
+    $page for page name,
+    $action for action type, the key of log_action,
+    $remark for remark text,
+    $object = null for model object , if null will get the before and after value add manual
+    $target_id = null for modify target id, if null will get the primary if in model object
+    save the model object before after value to database
 
 ###### logList($page=15)
-`return the log list result paginate by $page`
+    return the log list result paginate by $page
 
 ###### logContent($id)
-`return the content HTML of log id=$id , you can use {!! $RESULT_HTML !!} in blade to show the log content`
+    return the content HTML of log id=$id,
+    you can use {!! $RESULT_HTML !!} in blade to show the log content
+    $RESULT_HTML for logContent() method result
 
 # Example for manual add value
     ActionLog::pushBefore('system_permission', system_permission::where('member_id', $request->get('id'))->get());
