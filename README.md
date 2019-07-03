@@ -64,3 +64,5 @@ for three type to the name you want
 # Example for save model value
     ActionLog::save(Route::getCurrentRoute()->action['parent'],2,'remark text',$system_permission);
    
+# 中文版本文件
+[ActionLog : 紀錄網站每筆資料操作記錄](http://www.alvinchen.club/2019/06/28/%e4%bd%9c%e5%93%81laravel-package-actionlog-%e7%b4%80%e9%8c%84%e7%b6%b2%e7%ab%99%e6%af%8f%e7%ad%86%e8%b3%87%e6%96%99%e6%93%8d%e4%bd%9c%e8%a8%98%e9%8c%84/)
